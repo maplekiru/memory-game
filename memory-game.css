@@ -1,8 +1,13 @@
 /* you can add to or change this. */
+header {
+  width: 100%;
+  color: whitesmoke;
+  background-color: darkslategray;
+}
 
 body {
   text-align: center;
-  background-color: white;
+  background-color:beige;
 }
 
 #game {
@@ -11,7 +16,7 @@ body {
   height: 500px;
   margin: 25px;
   display: inline-block;
-  background-color:ivory;
+  background-color:darkslategray;
 }
 
 div div{
