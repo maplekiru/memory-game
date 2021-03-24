@@ -1,0 +1,61 @@
+/* you can add to or change this. */
+
+body {
+  text-align: center;
+  background-color: white;
+}
+
+#game {
+  border: 1px solid black;
+  width: 1000px;
+  height: 500px;
+  margin: 25px;
+  display: inline-block;
+  background-color:ivory;
+}
+
+div div{
+  width: 150px;
+  height: 200px;
+  margin: 23px;
+  border: 1px solid black;
+  background-color:ghostwhite;
+  display: inline-block;
+}
+
+.unflipped:hover {
+  border: 1px solid red;
+}
+
+div.matched {
+  cursor: default;
+}
+
+div.matched:hover {
+ border: 1px solid black;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.green {
+  background-color: green;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.unflipped {
+  background-color: ghostwhite;
+  cursor: pointer;
+}
