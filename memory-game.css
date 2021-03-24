@@ -64,3 +64,19 @@ div.matched:hover {
   background-color: ghostwhite;
   cursor: pointer;
 }
+button {
+  width: 150px;
+  height: 30px;
+  background-color: darkslategray;
+  color: white;
+}
+
+button:hover{
+  background-color: white;
+  color: black;
+}
+
+button:active {
+  background-color: darkslategray;
+  color: white;
+}

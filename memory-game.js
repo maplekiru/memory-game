@@ -56,11 +56,24 @@ function createCards(colors) {
 function handleCardClick(evt) {
   // ... you need to write this ...
   if (click == true) {
-  let temp = evt.currentTarget;
-  temp.classList.remove("unflipped");
-  temp.removeEventListener('click',handleCardClick);
-  flipCard(temp);
-  } else return;
+    let temp = evt.currentTarget;
+    temp.classList.remove("unflipped");
+    temp.removeEventListener('click',handleCardClick);
+    setTimeout(flipCard(temp),10);
+    if (count === 5) {
+      click = false;
+      let x = document.getElementById("refresh");
+      let button = document.createElement("button");
+      button.innerHTML = "Play again!";
+      button.addEventListener('click',function() {
+        window.location.reload();
+      })
+      x.appendChild(button);
+      setTimeout(function() {
+        alert("You win!!!");
+      },10);
+    }
+  }
 }
 /** Flip a card face-up. */
 
@@ -79,11 +92,9 @@ function flipCard(card) {
         click = true;
         },500);
       }
-      else unFlipCard(card);
-  }
-  if (count === 5) {
-    setTimeout(alert("You win!!!"),500);
-    click = false;
+      else {
+        unFlipCard(card);
+      }
   }
 }
 
